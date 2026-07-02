@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Search the Zamkov Lab website.">
+	<title>SEARCH | Zamkov Lab</title>
+	<link href="./HOME_files/content.css" rel="stylesheet">
+	<link href="./HOME_files/template.css" rel="stylesheet">
+	<link href="./HOME_files/css" rel="stylesheet">
+	<style>
+		body.site { border-top: 3px solid #141313; background-color: #f4f6f7; }
+		a { color: #141313; }
+		.search-page-form { margin: 18px 0 24px; }
+		.search-page-form input[type="search"] { width: 72%; min-height: 30px; }
+		.search-result { padding: 16px 0; border-bottom: 1px solid #ddd; }
+		.search-result h2 { margin: 0 0 7px; font-size: 19px; }
+		.search-result p { margin: 0; line-height: 1.55; }
+		.search-message { padding: 14px; background: #f5f5f5; border-left: 4px solid #233a95; }
+		@media (max-width: 767px) { .search-page-form input[type="search"] { width: 100%; box-sizing: border-box; margin-bottom: 8px; } }
+	</style>
+</head>
+<body class="site">
+	<div class="body" id="top">
+		<div class="container">
+			<header class="header" role="banner">
+				<div class="header-inner clearfix">
+					<a class="brand pull-left" href="index.html"><span class="site-title" title="Zamkov Lab">Zamkov Lab</span></a>
+				</div>
+			</header>
+			<nav class="navigation" role="navigation">
+				<div class="navbar pull-left">
+					<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="element-invisible">Toggle Navigation</span>
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</a>
+				</div>
+				<div class="nav-collapse">
+					<ul class="nav menu nav-pills mod-list">
+						<li><a href="index.html">HOME</a></li><li><a href="PEOPLE.html">PEOPLE</a></li><li><a href="RESEARCH.html">RESEARCH</a></li><li><a href="TUTORIALS.html">TUTORIALS</a></li><li><a href="PUBLICATIONS.html">PUBLICATIONS</a></li><li><a href="FUNDING.html">FUNDING</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="moduletable">
+				<div class="bannergroup"><div class="banneritem"><img src="./HOME_files/banner_final_3.png" alt="Zamkov Lab banner"><div class="clr"></div></div></div>
+			</div>
+			<div class="row-fluid">
+				<aside id="sidebar" class="span3">
+					<div class="sidebar-nav">
+						<div class="moduletable">
+							<div class="search">
+								<form action="SEARCH.html" method="get" class="form-inline" role="search">
+									<label for="sidebar-search-input" class="element-invisible">Search site</label>
+									<input name="q" id="sidebar-search-input" class="inputbox search-query input-medium" type="search" placeholder="Search site…" aria-label="Search all site content">
+								</form>
+							</div>
+						</div>
+						<div class="moduletable">
+							<h3>Group Members</h3>
+							<ul class="nav menu mod-list">
+								<li><a href="CURRENT_MEMBERS.html">Current Members</a></li>
+								<li><a href="FORMER_MEMBERS.html">Former Members</a></li>
+								<li><a href="PEOPLE.html#group-pictures">All Group Pictures</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<main id="content" role="main" class="span9">
+					<div class="item-page">
+						<h1><span style="color: #474747;">Search Zamkov Lab</span></h1>
+						<form action="SEARCH.html" method="get" class="form-inline search-page-form" role="search">
+							<label for="site-search-input" class="element-invisible">Search all site content</label>
+							<input name="q" id="site-search-input" type="search" placeholder="Search publications, research, people…" aria-label="Search all site content" autofocus>
+							<button type="submit" class="btn">Search</button>
+						</form>
+						<p id="search-summary">Enter a word or phrase to search the entire site.</p>
+						<div id="search-results" aria-live="polite"></div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" role="contentinfo">
+		<div class="container"><hr><p class="pull-right"><a href="#top">Back to Top</a></p><p>© 2026 Zamkov Lab</p></div>
+	</footer>
+	<script src="./HOME_files/jquery.min.js.download"></script>
+	<script src="./HOME_files/jquery-noconflict.js.download"></script>
+	<script src="./HOME_files/bootstrap.min.js.download"></script>
+	<script src="./HOME_files/template.js.download"></script>
+	<script src="./site-search.js"></script>
+</body>
+</html>
